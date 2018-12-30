@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>マリオ６４文字・１６進法の変換器</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="jquery.js"></script>
+		<script src="scripts.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+		<h1>マリオ６４ROMの文字・１６進法変換器</h1>
+		<h4><a href="jahex-en.html">(English Version)</a></h4>
+
+		<p>今回は１６進法から日本語文字に（それとも逆に）交換するプログラムを作成しました。１６進法か日本語を入力してからボタンをクリックすると交換します。アウトプットは読み取り専用です。特殊文字には下記のボタンを使ってください。</p>
+
+		<p><a href="https://sites.google.com/view/loohhoo/japanese-hacking/text-editing">こちらのテーブル</a>（英語）もご参考に。</p>
+
+		<div id="converter">
+
+		<h2>１６進法 &rarr; 日本語 </h2>
+
+		<textarea type="text" id="hex"></textarea>
+		<textarea id="ja-out" readonly></textarea>
+		<button id="convert-hex">
+			交換
+		</button>
+
+		<h2>日本語 &rarr; １６進法</h2>
+
+		<textarea type="text" id="ja"></textarea>
+		<textarea id="hex-out" readonly></textarea>
+		<button id="convert-ja">
+			交換
+		</button>
+
+		<br>
+
+		<br />
+		</div>
+
+		<div id="special">
+
+			<button id="clear" style="margin-left: -220px">文字を消す</button>
+			<h2>特殊文字</h2>
+			<button id="arrows">⟷ E4</button> <button id="daku">゛ F0</button> <button id="handaku">゜ F1</button> <button id="coin">$ [コイン] F9</button> <button id="star-1">★ FA</button> <button id="x">ｘ [全角文字] FB</button> <button id="star-2">☆ FD</button> <button id="line-break">n [強制改行] FE</button> <button id="end">e [切り] FF</button>
+
+
+			<h3>特殊文字の使い方</h3>
+
+			<p>
+				<ul>
+					<li>特殊文字には、<a href="https://sites.google.com/view/loohhoo/japanese-hacking/text-editing">こちらのテーブル</a>からコピペしてください。（カッコの中の文字は含みません。)</li>
+					<li>強制改行には、英小文字の「n」を入力してください。テキスト切りを定義するには英小文字の「e」を入力してください。</li>
+					<li>濁点 ('') を追加するには, 文字の後ろにF0を入力してください。 半濁点 （゜） はF1になります。</li>
+				</ul>
+			</p>
+		</div>
+
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+body, body * {
+	background-color: black;
+	color: white;
+}
+
+h1, h2, h3, h4, p, button, li {
+	font-family: sans-serif;
+	line-height: 1.5em;
+}
+
+h1 {
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+}
+
+h2 {
+	margin-top: 5px;
+}
+
+h4 {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+textarea {
+	display: block;
+	float: left;
+	width: 300px;
+	height: 200px;
+	overflow-y: scroll;
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+
+#convert-ja, #convert-hex {
+	display: block;
+	clear: both;
+}
+
+#converter {
+	width: 675px;
+	float: left;
+}
+
+#special {
+	width: 325px;
+	float: right;
+}
+
+button {
+	width: 120px;
+	height: 30px;
+	display: block;
+	margin: 0 auto;
+}
+
+button+button {
+	margin-top: 10px;
+}

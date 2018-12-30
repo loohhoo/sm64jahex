@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>マリオ６４文字・１６進法の変換器</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="jquery.js"></script>
+		<script src="scripts.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+		<h1>Japanese SM64 ROM Text &larr; &rarr; Hex Converter Tool</h1>
+		<h4><a href="jahex-ja.html">(日本語版はこちら)</a></h4>
+
+		<p>I created this tool to both "decrypt" text values (convert the encoding to regular letters) and vice versa. Paste HEX or Japanese on the left textboxes and click either HEX &rarr; JA or JA &rarr; HEX. Output boxes are readonly. For hard-to-type special characters, use buttons to the right.</p>
+
+		<p>Please reference <a href="https://sites.google.com/view/loohhoo/japanese-hacking/text-editing">this table</a> for a detailed list of values.</p>
+
+		<div id="converter">
+
+		<h2>Hex &rarr; Japanese </h2>
+
+		<textarea type="text" id="hex"></textarea>
+		<textarea id="ja-out" readonly></textarea>
+		<button id="convert-hex">
+			HEX &rarr; JA
+		</button>
+
+		<h2>Japanese &rarr; Hex</h2>
+
+		<textarea type="text" id="ja"></textarea>
+		<textarea id="hex-out" readonly></textarea>
+		<button id="convert-ja">
+			JA &rarr; HEX
+		</button>
+
+		<br>
+
+		<br />
+		</div>
+
+		<div id="special">
+
+			<button id="clear" style="margin-left: -220px">CLEAR</button>
+			<h2>Special Characters</h2>
+			<button id="arrows">⟷ E4</button> <button id="daku">゛ F0</button> <button id="handaku">゜ F1</button> <button id="coin">$ [coin] F9</button> <button id="star-1">★ FA</button> <button id="x">ｘ [full-width] FB</button> <button id="star-2">☆ FD</button> <button id="line-break">n [line-break] FE</button> <button id="end">e [end dialog] FF</button>
+
+
+			<h3>Usage</h3>
+
+			<p>
+				<ul>
+					<li>For special characters, paste as you see on <a href="https://sites.google.com/view/loohhoo/japanese-hacking/text-editing">this table</a> (minus any explanatory text in brackets []).</li>
+					<li>To add a line break, type lower-case n, and for end dialog, type lower-case e. </li>
+					<li>To add dakuten ('') to a character, insert F0 before it; for handakuten (゜) insert F1 before it.</li>
+				</ul>
+			</p>
+		</div>
+
+
+		</div>
+	</body>
+</html>
